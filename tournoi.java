@@ -1,17 +1,18 @@
-package esport;
+package eSport;
 
-	public class tournoi {
-		public String typeSport ;
-		public String sexParticipant ;
-		public String dateDebut ;
-		public String dateFin ;
+public class Tournoi {
 	
-		tournoi(String typeSport, String sexParticipant, String dateDebut, String dateFin){
-			this.typeSport = typeSport ;
-			this.sexParticipant = sexParticipant ;
-			this.dateDebut = dateDebut ;
-			this.dateFin = dateFin ;	
-		}
+	public Jeux jeux ;
+	public Qualification qualification;
+	public String dateDebut ;
+	public String dateFin ;
+	public String lieu;
+
+	Tournoi(Jeux jeux, String dateDebut, String dateFin, String lieu){
+		this.jeux = jeux ;
+		this.dateDebut = dateDebut ;
+		this.dateFin = dateFin ;
+		this.lieu = lieu;
 	}
-	
-	
+
+}
