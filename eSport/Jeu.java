@@ -1,12 +1,12 @@
 package eSport;
 
-public class Jeux {
+public class Jeu {
 	
 	public String nom ;
 	public String licence;
 	public String console;
 	
-	public Jeux(String nom, String licence, String console){
+	public Jeu(String nom, String licence, String console){
 		this.nom = nom;
 		this.licence = licence;
 		this.console = console;
