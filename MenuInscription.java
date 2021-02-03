@@ -33,9 +33,9 @@ public class MenuInscription {
 			System.out.println("Entrez votre mot de passe \n");
 			Scanner scanner2 = new Scanner (System.in);
 			String mdp = scanner2.nextLine();
-			// Vérification de Connexion
-			System.out.println("  *_*  Bienvenue dans votre espace adhérant \n Vous etes bien connecté \n");
-			System.out.println(" NOUS TRAVAILLONS ACTUELLEMENT SUR LA CONSTRUCTION DE NOTRE SITE  \n");
+		 
+ 
+			 
 		 
 		}
 	
@@ -57,6 +57,11 @@ public class MenuInscription {
 					inscrip();	
 					// Ecriture d'abords dans le fichier 
 					connexion();
+					// Vérification de Connexion if conn = 1  
+					System.out.println("  _   Vous etes bien connecté  _ \n  Bienvenue dans votre espace Joueur \n");
+			        System.out.println("  _   Pour afficher les tournois => Tapez 1 \n"
+			                            + "   Afficher son équipe => Tapez 2 \n");
+					
 					break;
 					
 				case 2:
@@ -64,6 +69,11 @@ public class MenuInscription {
 					inscrip();
 					// Ecriture d'abords dans le fichier 
 					connexion();
+					// Vérification de Connexion if conn = 1  
+					System.out.println("  Vous etes bien connecté  _ \n  Bienvenue dans votre espace Coach \n");
+			        System.out.println("  Pour afficher les tournois => Tapez 1 \n "
+			        				+ "   Pour afficher les équipes => Tapez 2 \n "
+			        				+ "   Pour Afficher le tableau de qualification => Tapez 3 \n ");
 					break;
 					
 				case 3:
@@ -71,6 +81,16 @@ public class MenuInscription {
 					inscrip();
 					// Ecriture d'abords dans le fichier 
 					connexion();
+					// Vérification de Connexion if conn = 1  
+					System.out.println("  Vous etes bien connecté  _ \n  Bienvenue dans votre espace Organisateur \n");
+					 System.out.println(" Pour afficher les tournois => Tapez 1 \n"
+		        				+ "       Pour supprimer un tournoi => Tapez 2 \n"
+		        				+ " 	  Pour afficher les équipes => Tapez 3 \n"
+		        				+ " 	  Pour supprimer une équipe => Tapez 4 \n"
+		        				+ "		  Pour Afficher le tableau de qualification => Tapez 5 \n"
+		        				+ "		  Pour Afficher  les Sposors => Tapez 6 \n"
+		        				+ "		  Pour supprimer un sposnor => Tapez 7 \n"
+		        				+ " 	  Pour ajouter un sponsor => Tapez 8  \n" );
 					break;
 				}
 			} catch(NumberFormatException e){
